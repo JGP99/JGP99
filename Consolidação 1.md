@@ -1,5 +1,5 @@
 
-public class Aprendizado2 {	
+public class Aprendizado {	
 	
 	static void Aprendizado1() {
 		int n = 7, x = 0;
