@@ -1,0 +1,26 @@
+
+public class fibonacci {
+	
+	static void mediana(int valor) {
+		int a = 0, b = 1;
+		int c;
+		double [ ] d = new double[valor];
+		
+		for (int i = 0; i < valor ; i++) {
+			d[i] = a;
+			c = b;
+			b = a + b;
+			a = c;
+		}
+		if (valor % 2 == 0) {
+			System.out.println(d[valor/2 - 1]/2 + d[valor/2]/2);
+		} else {
+			System.out.println(d[ (int) (valor/2 + 0.5)]);
+		}
+	}
+	
+	public static void main(String[] args) {
+		int contador = 12;
+		mediana(contador);
+	}
+}
